@@ -7,7 +7,9 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-/** Main Method Program.
+/**
+ * Main Method Program.
+ * 
  * @author gibso This Program was written by Gibson Green The following program is an integration.
  *         of skills that have been learned through April 18, 2019 (Introduction to Programming)
  *         Topics covered include: primitive data types, strings, string concatenation, casting
@@ -16,7 +18,9 @@ import java.util.Scanner;
  *         arrays)
  */
 public class HackerRank {
-  /** args this is the main method.
+  /**
+   * args this is the main method.
+   * 
    * @param args this is the main method.
    */
   public static void main(String[] args) {
@@ -67,8 +71,8 @@ public class HackerRank {
         }
         if (choice == 1 || choice == 2 || choice == 3 || choice == 4 || choice == 5 || choice == 6
             || choice == 7 || choice == 8 || choice == 9 || choice == 10 || choice == 11
-            || choice == 12 || choice == 13 || choice == 14 || choice == 15 || choice == 16 ||
-            choice == 17) {
+            || choice == 12 || choice == 13 || choice == 14 || choice == 15 || choice == 16
+            || choice == 17) {
           badInputSelection = false;
           System.out.println("Good choice");
         } else {
@@ -510,59 +514,60 @@ public class HackerRank {
             }
           }
           break;
-          
-        case 17 :
+
+        case 17:
           AppleProducts iPhone1 = new AppleProducts();
           iPhone1.communicate();
           iPhone1.showProductType();
           iPhone1.setCharging(true);
           System.out.println();
-          
+
           iPhone iPhone2 = new iPhone();
           iPhone2.communicate();
           iPhone2.showProductType();
           System.out.println();
-          
+
           AppleWatch appleWatch1 = new AppleWatch();
           appleWatch1.communicate();
-          appleWatch1.takeEKG();
+          appleWatch1.takeEkg();
           appleWatch1.showProductType();
           System.out.println();
-          
+
           MacBook macBook1 = new MacBook();
           macBook1.communicate();
           macBook1.showProductType();
           System.out.println();
-          
-          AppleProducts[] myAppleProducts = { iPhone1, iPhone2, appleWatch1, macBook1 };
-          for (AppleProducts heresAFew : myAppleProducts)
-          {
+
+          AppleProducts[] myAppleProducts = {iPhone1, iPhone2, appleWatch1, macBook1};
+          for (AppleProducts heresAFew : myAppleProducts) {
             heresAFew.communicate();
-          }   
-                  
+          }
+          break;
+
         default:
           System.out.println("This is a default case");
-      }
-      // the following try/catch along with if statement allows the user to reenter the overall
-      // program through user input, enter 0 for reenter and 1 to exit.
-      // input exceptions are handled and the user is prompted to reenter their selection
-      // if one of the options isn't chosen
-      System.out.println();
-      System.out.println("Would you like to reeneter the Program: Enter 0 for yes, and 1 for no.");
-      System.out.println();
-      try {
-        choice = scan.nextInt();
-      } catch (InputMismatchException eq) {
-        System.out.println("Choose 0 to reenter the program, or 1 to exit.");
-        scan.next();
-      } catch (Exception eg) {
-        System.out.println();
-      }
-      if (choice == 1) {
-        reenterProgram = false;
-        System.out.println("The program is terminated.");
-      } // if (choice == 1)
-    } // while (reenterProgram)
-    scan.close();
-  } // this is the main method curly brace
+          // the following try/catch along with if statement allows the user to reenter the overall
+          // program through user input, enter 0 for reenter and 1 to exit.
+          // input exceptions are handled and the user is prompted to reenter their selection
+          // if one of the options isn't chosen
+          System.out.println();
+          System.out
+              .println("Would you like to reeneter the Program: Enter 0 for yes, and 1 for no.");
+          System.out.println();
+          try {
+            choice = scan.nextInt();
+          } catch (InputMismatchException eq) {
+            System.out.println("Choose 0 to reenter the program, or 1 to exit.");
+            scan.next();
+          } catch (Exception eg) {
+            System.out.println();
+          }
+          if (choice == 1) {
+            reenterProgram = false;
+            System.out.println("The program is terminated.");
+          } // if (choice == 1)
+      } // while (reenterProgram)
+      scan.close();
+    } // this is the main method curly brace
+  }
 }
