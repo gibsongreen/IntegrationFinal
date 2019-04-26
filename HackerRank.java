@@ -27,7 +27,7 @@ public class HackerRank {
     while (reenterProgram) {
 
       System.out.println("The following are menu options for my Integration Project."
-          + " Enter an integer from 1-16 to go to the specified area:");
+          + " Enter an integer from 1-17 to go to the specified area:");
       System.out.println("1. Math Operations");
       System.out.println("2. Data Types, Using Data Types, Variable, and Scope");
       System.out.println("3. Returning a Value, THE Ternary Operator, Method Call & Arguments");
@@ -44,7 +44,8 @@ public class HackerRank {
       System.out.println("14. Array Sum, Enhanced For Loop, 2D Array");
       System.out.println("15. Array: Find Index, Find Min., Find Length");
       System.out.println("16. Bulls player 2D array search");
-      System.out.println("Make your number selection between 1-16 here: ");
+      System.out.println("17. AppleProduct Polymorphism Example");
+      System.out.println("Make your number selection between 1-17 here: ");
 
 
       // initializes variable for user input to 0
@@ -66,7 +67,8 @@ public class HackerRank {
         }
         if (choice == 1 || choice == 2 || choice == 3 || choice == 4 || choice == 5 || choice == 6
             || choice == 7 || choice == 8 || choice == 9 || choice == 10 || choice == 11
-            || choice == 12 || choice == 13 || choice == 14 || choice == 15 || choice == 16) {
+            || choice == 12 || choice == 13 || choice == 14 || choice == 15 || choice == 16 ||
+            choice == 17) {
           badInputSelection = false;
           System.out.println("Good choice");
         } else {
@@ -509,6 +511,35 @@ public class HackerRank {
           }
           break;
           
+        case 17 :
+          AppleProducts iPhone1 = new AppleProducts();
+          iPhone1.communicate();
+          iPhone1.showProductType();
+          iPhone1.setCharging(true);
+          System.out.println();
+          
+          iPhone iPhone2 = new iPhone();
+          iPhone2.communicate();
+          iPhone2.showProductType();
+          System.out.println();
+          
+          AppleWatch appleWatch1 = new AppleWatch();
+          appleWatch1.communicate();
+          appleWatch1.takeEKG();
+          appleWatch1.showProductType();
+          System.out.println();
+          
+          MacBook macBook1 = new MacBook();
+          macBook1.communicate();
+          macBook1.showProductType();
+          System.out.println();
+          
+          AppleProducts[] myAppleProducts = { iPhone1, iPhone2, appleWatch1, macBook1 };
+          for (AppleProducts heresAFew : myAppleProducts)
+          {
+            heresAFew.communicate();
+          }   
+                  
         default:
           System.out.println("This is a default case");
       }
