@@ -1,20 +1,44 @@
 // Gibson Green
 // Integration Project
-/** Object class to describe a Person.
+/**
+ * Object class to describe a Person.
+ * 
  * @author gibso
  *
  */
 public class Person {
+  /**
+   * what the name of the person is.
+   * 
+   */
   protected String name;
+  /**
+   * what the age of person is.
+   * 
+   */
   protected int age;
+  /**
+   * was person born as infant?
+   * 
+   */
   protected boolean bornAsInfant;
+  /**
+   * how many fingers person normally has
+   * 
+   */
   protected int numberOfFingers = 10;
 
   // constructor that accepts no arguments
+  /**
+   * constructor of person with no arguments
+   * 
+   */
   public Person() {}
 
   // constructor that accepts 2 arguments
-  /** Constructor with 2 parameters.
+  /**
+   * Person Constructor with 2 parameters.
+   * 
    * @param n initial n variable parameter
    * @param a initial a variable parameter
    */
@@ -25,7 +49,9 @@ public class Person {
   }
 
   // constructor that accepts 3 arguments
-  /** Constructor with 3 parameters.
+  /**
+   * Person Constructor with 3 parameters.
+   * 
    * @param n initial n variable parameter
    * @param a initial a variable parameter
    * @param b initial b variable parameter
@@ -38,7 +64,9 @@ public class Person {
   }
 
   // constructor that accepts 4 arguments
-  /** Constructor with 4 parameters.
+  /**
+   * Person Constructor with 4 parameters.
+   * 
    * @param n initial n variable parameter
    * @param a initial a variable parameter
    * @param b initial b variable parameter
