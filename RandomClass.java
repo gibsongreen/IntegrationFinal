@@ -1,5 +1,13 @@
+// Gibson Green
+// Integration Project
 import java.util.Random;
 
+/**
+ * Random class gives random class features of truth or dare game.
+ * 
+ * @author gibso
+ *
+ */
 public class RandomClass {
   {
     // Truth or dare Game; using Random numbers to generate whether you get truth or dare
