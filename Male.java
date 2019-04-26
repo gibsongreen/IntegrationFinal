@@ -5,6 +5,9 @@
  *
  */
 public class Male extends Person {
+  /** number of fingers a male has is normally 11.
+   * 
+   */
   private int numberOfFingers = 11;
 
   /** hello person.
@@ -28,6 +31,9 @@ public class Male extends Person {
     System.out.println(numberOfFingers);
   }
 
+  /* (non-Javadoc)
+   * @see Person#speak()
+   */
   public void speak() {
     System.out.println("Males speak loud");
   }
