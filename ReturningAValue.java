@@ -1,4 +1,12 @@
+// Gibson Green
+// Integration Project
 
+/**
+ * Returns the value of a simple sum and division method.
+ * 
+ * @author gibso
+ *
+ */
 public class ReturningAValue {
   // usingReturn is a Method, it uses 2 parameters that are type of
   // double; they are numberOne and numberTwo
@@ -6,6 +14,13 @@ public class ReturningAValue {
   // this method is printed in the main method
   // the entire following line is called a Method Header
   // double numberOne & double numberTwo in the header are called parameters
+  /**
+   * returns the parameters of the sum and division.
+   * 
+   * @param numberOne
+   * @param numberTwo
+   * @return
+   */
   double usingReturn(double numberOne, double numberTwo) {
     double sum;
     sum = (numberOne + numberTwo) / 3;
